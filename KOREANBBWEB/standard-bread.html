@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STANDARD BREADS</title>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="images/louellabakerylogo.jpg" type="image/x-icon">
+    <style>
+       #menu-toggle {
+    display: none;
+}
+
+/* Show hamburger icon only on mobile */
+.menu-icon {
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        text-align: center;
+        padding: 50px 0; /* ✅ Fixed spacing above and below */
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px; /* ✅ Proper spacing between menu items */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav-links ul li {
+        margin: 0; /* ✅ Remove unnecessary extra spacing */
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        display: block;
+        height: 300px;
+    }
+}
+
+        </style>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Louella Bakery <span class="year">1974</span></h1>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+              <i class="fa fa-bars"></i>
+            </label>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html" class="active">MENU</a></li>
+            <li><a href="Gallery.html">GALLERY</a></li>
+            <li><a href="CONTACT.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <aside class="categories">
+            <a href="menu.html" class="category">All</a>
+            <a href="standard-bread.html" class="category active">STANDARD BREAD</a>
+            <a href="premium-bread.html" class="category">PREMIUM BREAD</a>
+           \
+        </aside>
+
+        <main class="menu">
+            <h2>STANDARD BREAD</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images\LOAF BREAD.png" alt="Cake 1">
+                    <h3>SOAF BREAD</h3>
+                    <p>₱20</p>
+                    <a href="order-summary.html?item=Cake%201&price=150" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\yemacake.jpg" alt="Cake 2">
+                    <h3>YEMA</h3>
+                    <p>₱30</p>
+                    <a href="order-summary.html?item=Cake%202&price=170" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\WEDDING CAKE.jpg" alt="Delicious Cake">
+                    <h3>Delicious Cake</h3>
+                    <p>₱250</p>
+                    <a href="order-summary.html?item=Delicious%20Cake&price=250" class="order-btn">Order Now</a>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images\cheese dounut.jpg" alt="Cake 1">
+                    <h3>CHEESE BREAD</h3>
+                    <p>₱20</p>
+                    <a href="order-summary.html?item=Cake%201&price=150" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\BIRTHDAY CAKE1.jpg" alt="Cake 2">
+                    <h3>YEMA</h3>
+                    <p>₱30</p>
+                    <a href="order-summary.html?item=Cake%202&price=170" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\HOT PANDESAL.png" alt="Delicious Cake">
+                    <h3>PANDESAL</h3>
+                    <p>₱250</p>
+                    <a href="order-summary.html?item=Delicious%20Cake&price=250" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h4>Follow Us on Social Media</h4>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100063899358118" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/yourpage" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.tiktok.com/@yourpage" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://instagram.com/yourpage" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>📍 Louella Bakery, Bugallon, Pangasinan</p>
+        <p>&copy; 2025 Louella Bakery. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

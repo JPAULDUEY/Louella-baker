@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - LOUELLA BAKERY</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/louellabakerylogo.jpg" type="image/x-icon">
+</head>
+<body>
+    <style> 
+    #menu-toggle {
+        display: none;
+    }
+    
+    /* Style for the menu icon */
+    .menu-icon {
+        display: none;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    /* Responsive nav for smaller screens */
+    @media (max-width: 768px) {
+        .menu-icon {
+            display: block;
+        }
+    
+        .nav-links {
+            display: none;
+            width: 100%;
+            background-color: #444;
+            position: absolute;
+            top: 60px;
+            left: 0;
+        }
+    
+        .nav-links ul {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .nav-links ul li {
+            margin: 15px 0;
+        }
+    
+        #menu-toggle:checked + .menu-icon + .nav-links {
+        display: block;
+        height: 350px; /* Adjust as needed */
+    }
+}
+    </style>
+    <!-- Navbar -->
+    <section class="sub-header">
+        <nav>
+            <h2 class="logo">LOUELLA BAKERY 1974</h2>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+              <i class="fa fa-bars"></i>
+            </label>
+
+                <div class="nav-links">
+                    <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="Gallery.html">GALLERY</a></li>
+                    <li><a href="CONTACT.html"class ="active"></a>>CONTACT</a></li>
+                </ul>
+            </div>
+        </nav> 
+        <h1>CONTACT US</h1>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="contact-form">
+            <h3>Contact Form</h3>
+            <form action="#">
+                <!-- Name -->
+                <input type="text" name="name" placeholder="Your Name" required>
+                
+                <!-- Mobile Number -->
+                <input type="tel" name="mobile" placeholder="Your Mobile Number" required>
+                
+                <!-- Email -->
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                
+                <!-- Address -->
+                <div class="address-field">
+                    <label for="province">Province</label>
+                    <select id="province" name="province" required>
+                        <option value="pangasinan">Pangasinan</option>
+                        <option value="batangas">Batangas</option>
+                        <option value="cebu">Cebu</option>
+                        <option value="ilocos">Ilocos Norte</option>
+                    </select>
+
+                    <label for="city">City</label>
+                    <select id="city" name="city" required>
+                        <option value="dagupan">Dagupan</option>
+                        <option value="san-carlos">San Carlos</option>
+                        <option value="lingayen">Lingayen</option>
+                        <option value="alaminos">Alaminos</option>
+                    </select>
+
+                    <label for="barangay">Barangay</label>
+                    <select id="barangay" name="barangay" required>
+                        <option value="pangasinan">Barangay 1</option>
+                        <option value="pangasinan">Barangay 2</option>
+                        <option value="pangasinan">Barangay 3</option>
+                        <option value="pangasinan">Barangay 4</option>
+                    </select>
+
+                    <label for="street">Street</label>
+                    <input type="text" id="street" name="street" placeholder="Street Name" required>
+
+                    <label for="house">House Number</label>
+                    <input type="text" id="house" name="house" placeholder="House Number" required>
+                </div>
+
+                <!-- Icon Boxes with Toggle Feature -->
+                <div class="address-icons">
+                    <!-- Home Radio -->
+                    <input type="radio" name="location" id="home" class="location-option" hidden>
+                    <label class="icon-box" for="home">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </label>
+                    <!-- Office Radio -->
+                    <input type="radio" name="location" id="office" class="location-option" hidden>
+                    <label class="icon-box" for="office">
+                        <i class="fa fa-building"></i>
+                        <span>Office</span>
+                    </label>
+                </div>
+            </form>
+        </div>
+
+        <!-- Location and Map Section -->
+        <div class="location-map">
+            <p class="pin-location">Pin Your Location Here</p>
+            <div class="map-container">
+                <!-- OpenStreetMap iframe (No API Key required) -->
+                <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=119.3%2C13.1%2C124.3%2C20.3&layer=mapnik" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <!-- Submit Button under Map -->
+            <button class="submit-btn">Submit</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h4>Follow Us on Social Media</h4>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100063899358118" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/yourpage" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.tiktok.com/@yourpage" target="_blank">
+                <i class="fa fa-tiktok"></i>
+            </a>
+            <a href="https://instagram.com/yourpage" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/yourphonenumber" target="_blank">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+        </div>
+        <p>📍 Louella Bakery, Bugallon, Pangasinan</p>
+        <p>&copy; 2025 Louella Bakery. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

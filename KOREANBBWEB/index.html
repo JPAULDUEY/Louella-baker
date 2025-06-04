@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louella Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/louellabakerylogo.jpg" type="image/x-icon">
+    <style>
+        /* Hide the checkbox input */
+    #menu-toggle {
+    display: none;
+}
+
+/* Style for the menu icon */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive nav for smaller screens */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links ul li {
+        margin: 15px 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-links {
+    display: block;
+    height: 350px; /* Adjust as needed */
+}
+
+
+}
+
+        
+        
+        .logo {
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+   <section class="header">
+        <nav>
+            <h2 class="logo">LOUELLA BAKERY 1974</h2>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+              <i class="fa fa-bars"></i>
+            </label>
+
+                <div class="nav-links">
+                    <ul>
+                    <li><a href="index.html" class ="active">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="Gallery.html">GALLERY</a></li>
+                    <li><a href="CONTACT.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav> 
+        
+        <div class="text-box">
+            <h1>THE TASTIEST BREAD YOU TASTE IS HERE</h1>
+            <p>Why have a second opinion<br>when you have the best option</p>
+            <a href="https://www.facebook.com/profile.php?id=100063899358118" class="hero-btn">VISIT US IN OUR FACEBOOK PAGE FOR MORE INQUIRIES</a>
+        </div>
+    </section>
+
+   
+
+    <!-- Course Section -->
+    <section class="course">
+        <h1>3 DIFFERENT BEST IN OUR BAKERY</h1>
+        <p><strong>BEST</strong></p>
+        <div class="row">
+            <div class="course-col">
+                <h3>VANILLA CAKE</h3>
+                <p> A timeless classic, our Vanilla Cake is soft, moist, and infused with the rich, aromatic essence of pure vanilla. Each bite melts in your mouth, offering a delicate sweetness balanced with a light and fluffy texture. Perfectly layered and topped with silky vanilla buttercream, this cake is a perfect choice for any celebration or a simple sweet indulgence. Whether enjoyed on its own or customized with fresh fruits and toppings, our Vanilla Cake is a treat that never goes out of style!  </p>
+            </div>
+            <div class="course-col">
+                <h3>SPANISH BREAD</h3>
+                <p>A bakery favorite, our Spanish Bread is a soft, golden-brown pastry rolled with a sweet, buttery filling. Each bite is a perfect balance of fluffy bread and a rich, slightly caramelized center, making it an irresistible treat for any time of the day. Best enjoyed warm with a cup of coffee or hot chocolate!</p>
+            </div>
+            <div class="course-col">
+                <h3>HOT PANDESAL</h3>
+                <p>A true Filipino classic, our Pandesal is freshly baked daily to bring you the perfect combination of a soft, pillowy inside and a slightly crisp, golden crust. Lightly dusted with breadcrumbs, this warm and comforting bread is perfect on its own, with butter, or paired with your favorite spreads and fillings. A breakfast and merienda must-have!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Section -->
+    <section class="campus">
+        <h1>HIGHLIGHTS BREAD</h1>
+        <p>HOT PANDESAL, SPANISH BREAD, LOAF BREAD</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="images\HOT PANDESAL.png" alt="HOT PANDESAL">
+                <div class="layer">
+                    <h3>HOT PANDESAL</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images\SPANISH BREAD.png" alt="SPANISH BREAD">
+                <div class="layer">
+                    <h3>SPANISH BREAD</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images\LOAF BREAD.png" alt="LOAF BREAD">
+                <div class="layer">
+                    <h3>LOAF BREAD</h3>
+                </div>
+            </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h1>CUSTOMER RATES</h1>
+        <p>RATES</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/MICHAEL DORIA.jpg" alt="Customer">
+                <div>
+                    <p>Masarap naman ang mga sineserve nila. May isa lang akong hindi nagustuhan, but overall it’s great.</p>
+                    <h3>Michael Andre Doria</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <h1>ORDER NOW</h1>
+        <a href="CONTACT.html" class="hero-btn">CONTACT US NOW</a>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+    <h4>Follow Us on Social Media</h4>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100063899358118" target="_blank">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/yourpage" target="_blank">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://www.tiktok.com/@yourpage" target="_blank">
+            <i class="fa fa-tiktok"></i>
+        </a>
+        <a href="https://instagram.com/yourpage" target="_blank">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/yourphonenumber" target="_blank">
+            <i class="fa fa-whatsapp"></i>
+        </a>
+    </div>
+    <p>📍 Louella Bakery, Bugallon, Pangasinan</p>
+    <p>&copy; 2025 Louella Bakery. All Rights Reserved.</p>
+</footer>
+</section>
+</body>
+</html>

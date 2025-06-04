@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - All Items</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/louellabakerylogo.jpg" type="image/x-icon">
+</head>
+<body>
+    <style>
+   #menu-toggle {
+    display: none;
+}
+
+/* Show hamburger icon only on mobile */
+.menu-icon {
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        text-align: center;
+        padding: 50px 0; /* ✅ Fixed spacing above and below */
+    }
+
+    .nav-links ul li {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Highlight only the item being hovered */
+.nav-links ul li:hover {
+    background-color: gold;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        display: block;
+        height: 300px;
+    }
+}
+
+        </style>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Louella Bakery <span class="year">1974</span></h1>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+              <i class="fa fa-bars"></i>
+            </label>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html" class="active">MENU</a></li>
+            <li><a href="Gallery.html">GALLERY</a></li>
+            <li><a href="CONTACT.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <aside class="categories">
+            <a href="foods\menu.html" class="category active">All</a>
+            <a href="standard-bread.html" class="category">STANDARD BREAD</a>
+            <a href="premium-bread.html" class="category">PREMIUM BREAD</a>
+            
+        </aside>
+
+        <main class="menu">
+            <h2>All Items</h2>
+            <div class="menu-items">
+                <!-- Standard Bread -->
+                <div class="menu-item">
+                    <img src="images\FOOD 1.jpg" alt="Standard Bread 1">
+                    <h3>SOAF BREAD</h3>
+                    <p>₱20</p>
+                    <a href="order-summary.html?item=Standard%20Bread%201&price=50" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\food 2.jpg" alt="Standard Bread 2">
+                    <h3>UBE</h3>
+                    <p>₱30</p>
+                    <a href="order-summary.html?item=Standard%20Bread%202&price=55" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\breadikoko.jpg" alt="Standard Bread 2">
+                    <h3>BREADIKOKO</h3>
+                    <p>₱30</p>
+                    <a href="order-summary.html?item=Standard%20Bread%202&price=55" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\buthci bread.jpg" alt="Standard Bread 2">
+                    <h3>BUTCHI</h3>
+                    <p>₱30</p>
+                    <a href="order-summary.html?item=Standard%20Bread%202&price=55" class="order-btn">Order Now</a>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images\pandikoko.jpg" alt="Standard Bread 2">
+                    <h3>PANDIKOKO</h3>
+                    <p>₱30</p>
+                    <a href="order-summary.html?item=Standard%20Bread%202&price=55" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\Putok.jpg" alt="Standard Bread 2">
+                    <h3>PUTOK</h3>
+                    <p>₱30</p>
+                    <a href="order-summary.html?item=Standard%20Bread%202&price=55" class="order-btn">Order Now</a>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images\yemacake.jpg" alt="Standard Bread 2">
+                    <h3>SLICE YEMA CAKE</h3>
+                    <p>₱30</p>
+                    <a href="order-summary.html?item=Standard%20Bread%202&price=55" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\SPANISH BREAD.png" alt="Standard Bread 2">
+                    <h3>SPANISH BREAD</h3>
+                    <p>₱30</p>
+                    <a href="order-summary.html?item=Standard%20Bread%202&price=55" class="order-btn">Order Now</a>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images\cheese margarine.jpg" alt="Standard Bread 2">
+                    <h3>BUTTER BREAD</h3>
+                    <p>₱30</p>
+                    <a href="order-summary.html?item=Standard%20Bread%202&price=55" class="order-btn">Order Now</a>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images\ham and cheese bread.jpg" alt="Standard Bread 2">
+                    <h3>HAM AND CHEESE</h3>
+                    <p>₱30</p>
+                    <a href="order-summary.html?item=Standard%20Bread%202&price=55" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\HOT PANDESAL.png" alt="Standard Bread 2">
+                    <h3>PANDESAL</h3>
+                    <p>₱30</p>
+                    <a href="order-summary.html?item=Standard%20Bread%202&price=55" class="order-btn">Order Now</a>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images\cookies.jpg" alt="Standard Bread 2">
+                    <h3>COOKIES</h3>
+                    <p>₱30</p>
+                    <a href="order-summary.html?item=Standard%20Bread%202&price=55" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\LOAF BREAD.png" alt="Standard Bread 2">
+                    <h3>LOAF BREAD</h3>
+                    <p>₱30</p>
+                    <a href="order-summary.html?item=Standard%20Bread%202&price=55" class="order-btn">Order Now</a>
+                </div>
+                
+
+
+                <!-- Premium Bread -->
+                <div class="menu-item">
+                    <img src="images\food 2.jpg" alt="Premium Bread 1">
+                    <h3>Premium Bread 1</h3>
+                    <p>₱70</p>
+                    <a href="order-summary.html?item=Premium%20Bread%201&price=70" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\cheese bread.jpg" alt="Premium Bread 2">
+                    <h3>Premium Bread 2</h3>
+                    <p>₱80</p>
+                    <a href="order-summary.html?item=Premium%20Bread%202&price=80" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\dounut.jpg" alt="Premium Bread 2">
+                    <h3>DOUNUT</h3>
+                    <p>₱80</p>
+                    <a href="order-summary.html?item=Premium%20Bread%202&price=80" class="order-btn">Order Now</a>
+                </div>
+
+
+                <!-- Cakes -->
+                <div class="menu-item">
+                    <img src="images\WEDDING CAKE.jpg" alt="Cake 1">
+                    <h3>Cake 1</h3>
+                    <p>₱150</p>
+                    <a href="order-summary.html?item=Cake%201&price=150" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\18TH CAKE.jpg" alt="Cake 2">
+                    <h3>Cake 2</h3>
+                    <p>₱170</p>
+                    <a href="order-summary.html?item=Cake%202&price=170" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\18TH CAKE2.jpg" alt="Cake 1">
+                    <h3>Cake 1</h3>
+                    <p>₱150</p>
+                    <a href="order-summary.html?item=Cake%201&price=150" class="order-btn">Order Now</a>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/BIRTHDAY CAKE1.jpg" alt="Cake 1">
+                    <h3>Cake 1</h3>
+                    <p>₱150</p>
+                    <a href="order-summary.html?item=Cake%201&price=150" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\CAKE4.jpg" alt="Cake 2">
+                    <h3>Cake 2</h3>
+                    <p>₱170</p>
+                    <a href="order-summary.html?item=Cake%202&price=170" class="order-btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="images\CAKE3.jpg" alt="Cake 1">
+                    <h3>Cake 1</h3>
+                    <p>₱150</p>
+                    <a href="order-summary.html?item=Cake%201&price=150" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h4>Follow Us on Social Media</h4>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100063899358118" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/yourpage" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.tiktok.com/@yourpage" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://instagram.com/yourpage" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>📍 Louella Bakery, Bugallon, Pangasinan</p>
+        <p>&copy; 2025 Louella Bakery. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
